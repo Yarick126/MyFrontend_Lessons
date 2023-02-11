@@ -1,0 +1,133 @@
+@import url(reset.css);
+
+body {
+  font-family: sans-serif;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background: linear-gradient(45deg, hsl(24, 60%, 83%), #c5dde8);
+}
+
+h1 {
+  font-size: 2em;
+  margin-left: 10%;
+}
+
+.main {
+  background-color: #00ffff;
+
+  margin: 100px 100px auto;
+
+  height: auto;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+  box-shadow: 6px 6px 6px rgb(127, 175, 175);
+}
+
+.container {
+  height: auto;
+  width: 90%;
+
+  border: 3px solid #5565fa;
+  background-color: #7884f0;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container_input{
+  margin-top: 10px;
+  margin-left: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.container_radio{
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.addToDo {
+  background-color: rgb(65, 217, 223);
+
+  border-radius: 10px;
+
+  font-size: 20px;
+
+  border-color: rgb(65, 217, 223);
+}
+
+input {
+  background-color: white;
+  width: 85%;
+  height: 28px;
+
+  border-radius: 10px;
+  border-color: white;
+}
+
+input[type="checkbox"] {
+  width: 28px;
+  height: 28px;
+}
+
+.addToDo:hover {
+  color: white;
+}
+
+
+.todoItem{
+  height: 40px;
+  width: 90%;
+
+  margin-top: 10px;
+
+
+  border: 3px solid #5565fa;
+  background-color: #7884f0;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list{
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.deleteToDo{
+  border-radius: 10px;
+  border-color: white;
+  color: red;
+  font-size: 20px;
+
+}
+
+input[type = "checkbox"]:checked + label{
+  text-decoration: line-through;
+  text-decoration-color: red ;
+}
+
+input[value='i']{
+  background-color: red;
+}
