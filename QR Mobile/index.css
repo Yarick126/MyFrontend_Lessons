@@ -1,0 +1,58 @@
+@import url("/QR Mobile/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+
+body{
+  box-sizing: content-box;
+  background-color: #fff;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  padding-top: 55px;
+  padding-left: 130px;
+
+  height: 290vh;
+  width: auto;
+  background-image: url("/QR Mobile/imgs/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
+}
+
+.head{
+  padding-left: 100px;
+  display: grid;
+  grid-auto-flow: column;
+
+  width: 180vh;
+  height: 46px;
+}
+
+.head_menu {
+  margin-right: 400px;
+  display: grid;
+
+  grid-auto-flow: column;
+  grid-template-columns: 10vh 8.4vh 15vh 18vh;
+
+  justify-content: space-between;
+}
+.head_menu > a {
+  font-size: 3.3vh;
+  line-height: 28px;
+  color: #fff;
+}
+
+.head_menu > a:hover {
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#chart_icon{
+  width: 39px;
+  height: 36.57px;
+
+  background-image: url('/QR Mobile/imgs/chart.png');
+  background-size: cover;
+}
