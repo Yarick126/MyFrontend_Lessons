@@ -12,17 +12,16 @@ body{
 header {
   padding-top: 5vh;
   padding-left: 7vw;
-  border: black solid;
 
   height: 160vh;
-  width: 100%;
+  width: auto;
   background-image: url("/QR Mobile/imgs/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
   background-repeat: no-repeat;
+  color: white
 }
 
 .head{
-
-  border: black solid;
+  position: relative;
 
   width: 85vw;
   height: 46px;
@@ -54,10 +53,87 @@ header {
 }
 
 #chart_icon{
+  position: absolute;
+  right: 0;
   width: 39px;
   height: 36.57px;
 
   background-image: url('/QR Mobile/imgs/chart.png');
   background-size: cover;
 
+}
+
+header section{
+  width: 1128px;
+  height: 410px;
+
+  margin-top: 82px;
+  margin-left: 90px;
+
+  border: 1px solid;
+  border-color: black ;
+
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+
+header h1{
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 96px;
+  text-align: center;
+  margin-bottom: 24px;
+  }
+
+header p{
+  width: 583px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+
+  text-align: center;
+
+}
+
+#search{
+  width: 463px;
+  height: 71px;
+
+  padding-left: 30px;
+
+  margin-top: 42px;
+
+  display: grid;
+  grid-auto-flow:column;
+  align-items: center;
+  column-gap: 12px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(10px);
+
+  border-radius: 50px;
+
+}
+
+#search input{
+  width: 340px;
+  height: 71px;
+  color: white;
+  
+}
+
+#search input::placeholder{
+  color: white;
+}
+
+#search button{
+  width: 50px;
+  height: 50px;
+
+  background-image: url("imgs/btn-search.png");
+
+  border-radius: 50%;
 }
