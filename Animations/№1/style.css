@@ -1,0 +1,38 @@
+@import url("reset.css");
+
+body{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container{
+  height: 500px;
+
+  background-image: url("img/background.jpg");
+  background-repeat: repeat-x;
+
+  animation: animate 10s linear;
+}
+
+@keyframes animate {
+  0%{
+    margin-top: 0vh;
+    background-position: 0 0;
+  }
+  30%{
+    margin-top: 2vh;
+    background-position: 30% 0;
+  }
+  60%{
+    margin-top: 3vh;
+    background-position: 100% 0;
+  }
+  30%{
+    margin-top: 2vh;
+    background-position: 30% 0;
+  }
+  0%{
+    margin-top: 0vh;
+    background-position: 0% 0;
+  }
+}

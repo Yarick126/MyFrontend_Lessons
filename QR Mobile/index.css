@@ -4,37 +4,41 @@
 
 
 body{
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-color: #fff;
   font-family: 'Work Sans', sans-serif;
 }
 
 header {
-  padding-top: 55px;
-  padding-left: 130px;
+  padding-top: 5vh;
+  padding-left: 7vw;
+  border: black solid;
 
-  height: 290vh;
-  width: auto;
+  height: 160vh;
+  width: 100%;
   background-image: url("/QR Mobile/imgs/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
+  background-repeat: no-repeat;
 }
 
 .head{
-  padding-left: 100px;
+
+  border: black solid;
+
+  width: 85vw;
+  height: 46px;
+
   display: grid;
   grid-auto-flow: column;
-
-  width: 180vh;
-  height: 46px;
+  justify-content: center;
 }
 
 .head_menu {
-  margin-right: 400px;
   display: grid;
 
   grid-auto-flow: column;
   grid-template-columns: 10vh 8.4vh 15vh 18vh;
 
-  justify-content: space-between;
+  column-gap: 5vw;
 }
 .head_menu > a {
   font-size: 3.3vh;
@@ -55,4 +59,5 @@ header {
 
   background-image: url('/QR Mobile/imgs/chart.png');
   background-size: cover;
+
 }
