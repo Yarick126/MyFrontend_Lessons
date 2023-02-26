@@ -5,7 +5,6 @@
 
 body{
   box-sizing: border-box;
-  background-color: #fff;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -14,9 +13,11 @@ header {
   padding-left: 7vw;
 
   height: 160vh;
-  width: auto;
+  width: 100vw;
   background-image: url("/QR Mobile/imgs/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
   background-repeat: no-repeat;
+
+  background-size: cover;
   color: white
 }
 
@@ -24,7 +25,7 @@ header {
   position: relative;
 
   width: 85vw;
-  height: 46px;
+  height: 2vh;
 
   display: grid;
   grid-auto-flow: column;
@@ -41,7 +42,6 @@ header {
 }
 .head_menu > a {
   font-size: 3.3vh;
-  line-height: 28px;
   color: #fff;
 }
 
@@ -64,11 +64,11 @@ header {
 }
 
 header section{
-  width: 1128px;
-  height: 410px;
+  width: 69vw;
+  height: 30vh;
 
-  margin-top: 82px;
-  margin-left: 90px;
+  margin-top: 10vh;
+  margin-left: 7vw;
 
   display: grid;
   grid-auto-flow: row;
@@ -77,30 +77,25 @@ header section{
 
 header h1{
   font-weight: 700;
-  font-size: 82px;
-  line-height: 96px;
+  font-size: 9vmin;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 3vh;
   }
 
 header p{
-  width: 583px;
-
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-
+  width: 44vw;
+  font-size: 3.5vmin;
   text-align: center;
 
 }
 
 #search{
-  width: 463px;
-  height: 71px;
+  width: 31vw;
+  height: 10vh;
 
-  padding-left: 30px;
+  padding-left: 2vw;
 
-  margin-top: 42px;
+  margin-top: 3vh;
 
   display: grid;
   grid-auto-flow:column;
@@ -116,8 +111,8 @@ header p{
 }
 
 #search input{
-  width: 340px;
-  height: 71px;
+  width: 22.5vw;
+  height: 9vh;
   color: white;
   
 }
@@ -131,6 +126,7 @@ header p{
   height: 50px;
 
   background-image: url("imgs/btn-search.png");
+  background-repeat: no-repeat;
 
   border-radius: 50%;
 }
@@ -526,6 +522,7 @@ footer {
 
   display: flex;
   flex-direction: column;
+  -ms-flex-direction: column;
 }
 
 .input_email span {
@@ -549,6 +546,7 @@ footer {
 
   display: flex;
   flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -602,5 +600,6 @@ footer {
   color: white;
 }
 
-.right_span {
-}
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+  
+  }
