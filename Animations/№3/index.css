@@ -1,24 +1,24 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-html{
+html {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   height: 100%;
-}
 
-body{
-  width: 100%;
-  min-height: 100%;
   position: relative;
 }
 
-header{
+body {
+  min-height: 100%;
+
+  padding-left: 56px;
+  padding-top: 56px;
+}
+
+header {
   width: 1395px;
   height: 48px;
-
-  margin-left: 56px;
-  margin-top: 56px;
 
   display: flex;
   flex-direction: row;
@@ -31,11 +31,12 @@ header{
   color: black;
 }
 
-header a:visited{
+header a:visited {
   color: black;
 }
 
-#icon{
+#icon {
+  z-index: 2;
   width: 112px;
   height: 48px;
 
@@ -46,7 +47,8 @@ header a:visited{
   margin-right: 200px;
 }
 
-#menu{
+#menu {
+  z-index: 2;
   display: flex;
   flex-direction: row;
 
@@ -55,56 +57,97 @@ header a:visited{
   margin-right: 443px;
 }
 
-#profile_menu{
+#profile_menu {
+  z-index: 2;
   width: 166px;
   height: 26px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 48px;
+  column-gap: 42px;
 }
 
-#fav{
+#fav {
   background-image: url("imgs/favorite.png");
 }
 
-#prof{
+#prof {
   background-image: url("imgs/account_circle.png");
 }
 
-#shop{
+#shop {
   background-image: url("imgs/shopping_cart.png");
 }
 
-#profile_menu>a{
+#profile_menu > a {
   width: 26px;
   height: 26px;
 
   background-size: cover;
-
-  background-repeat: no-repeat;
 }
 
-#container{
+/*----------------------*/
+
+#container {
   position: absolute;
+
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3,505px);
+
+  display: flex;
+  flex-direction: row;
+
+  top: 0;
+  left: 0;
 }
 
-#conatainer div{
+#container div {
+  width: 33.33%;
+  height: 100%;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+
+  position: relative;
 }
 
-#box_1{
-  background: #F35145;
+#container > div:hover {
+  width: 80%;
 }
 
-#box_2{
-  background: #F68A3E;
+#box_1 {
+  background: #f35145;
 }
 
-#box_3{
+#box_2 {
+  background: #f68a3e;
+}
+
+#box_3 {
   background: #272727;
+}
+
+.cross {
+  margin-top: 273px;
+  margin-left: 30px;
+
+  border: 1px solid black;
+  color: white;
+
+  height: 250px;
+  width: 330px;
+
+  font-weight: 600;
+  font-size: 134.235px;
+  line-height: 162px;
+}
+
+.cross img {
+  border: 1px;
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
 }
