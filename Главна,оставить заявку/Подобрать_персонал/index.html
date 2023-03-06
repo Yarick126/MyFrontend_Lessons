@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://allfont.ru/allfont.css?fonts=book-antiqua" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Главная</title>
+</head>
+<body>
+  <header>
+    <div id="header_container">
+      <span id="nuber_phone">
+        8 (4872) 31-13-45
+      </span>
+      <span id="header_span">
+        Экономьте время в Вашем доме 
+      </span>
+      <div id="header_buttons">
+
+        <button id="btn_1" value="close">Оставить заявку</button>
+        <form action="URL" method="POST" id="form_1">
+
+          <span>ФИО</span>
+          <input type="text">
+  
+          <span>Телефон</span>
+          <input type="text">
+  
+          <span>Няня</span>
+          <select>
+            <option value="Z">Зина</option>
+            <option value="V">Вера</option>
+          </select>
+  
+          <select>
+            <option value="2">2 через 2</option>
+            <option value="4">4 через 2</option>
+          </select>
+  
+          <span>Дополнительная информация</span>
+          <textarea name="dop_inf" cols="2" rows="2"></textarea>
+
+          <button>Отправить</button>
+        </form>
+  
+        <button id="btn_2" value="close">Отправить резюме</button>
+        <form action="URL" method="POST" id="form_2">
+
+          <span>ФИО</span>
+          <input type="text">
+  
+          <span>Телефон</span>
+          <input type="text">
+  
+          <span>Должность</span>
+          <select>
+            <option value="nurse">Няня</option>
+            <option value="g">Горничная</option>
+          </select>
+          
+          <label for="education">Образование</label>
+          <input type="text" id="education">
+
+          <label for="res">Прикрепить резюме</label>
+          <textarea name="dop_inf" cols="2" rows="2" id="res"></textarea>
+          <button>Отправить</button>
+        </form>
+      </div>
+      </div>
+    </div>
+    <nav>
+      <div class="menu">
+        <a href="">ГЛАВНАЯ</a>
+        <a href="" id="f_cont_menu">ПОДОБАТЬ <br> ПЕРСОНАЛ</a>
+        <div class="cont_menu">
+          <a href="">Задать вопрос</a>
+          <a href="">Это интересно</a>
+          <a href="">Отзывы</a>
+        </div>
+        <a href="">ЦЕНЫ</a>
+      </div>
+      <div class="menu">
+        <a href="">ОСТАВИТЬ ЗАЯВКУ</a>
+        <a href="">ОСТАВИТЬ ВАКАНСИЮ</a>
+        <a href="">КОНТАКТЫ</a>
+      </div>
+    </nav>
+
+    <div id="conatainer_radio">
+      <input type="radio" name="vahekaart">
+      <input type="radio" name="vahekaart">
+      <input type="radio" name="vahekaart">
+      <input type="radio" name="vahekaart">
+      <input type="radio" name="vahekaart">
+      <input type="radio" name="vahekaart">
+    </div>
+  </header>
+
+  <main>
+   
+    <span>Подобрать персонал</span>
+    <form action="URL" method="POST" id="form_3">
+
+      <div class="main_container_1">
+        <label for="showOnly">Показать только</label>
+        <select id="showOnly">
+          <option value="nurse">Няня</option>
+          <option value="g">Горничная</option>
+        </select>
+      </div>
+
+      <div class="main_container_2">
+
+        <div class="experience">
+          <div class="str">
+            <span>Стаж</span>
+            <span>Возраст</span>
+          </div>
+          
+          <div class="str">
+            <span>от</span>
+            <span>от</span>
+          </div>
+
+          <div class="str">
+            <input type="number" class="onlyNum">
+            <input type="number" class="onlyNum">
+          </div>
+          
+          <div class="str">
+            <span>до</span>
+            <span>до</span>
+          </div>
+          
+          <div class="str">
+            <input type="number" class="onlyNum">
+            <input type="number" class="onlyNum">
+          </div>
+
+          <div class="str">
+            <span>лет</span>
+            <span>лет</span>
+          </div>
+        </div>
+
+      </div>
+
+      <button>ПОДОБРАТЬ</button>
+      
+    </form>
+    
+    <table>
+      <tr>
+        <th>ФИО</th>
+        <th>ДОЛЖНОСТЬ</th>
+        <th>ВОЗРАСТ</th>
+        <th>СТАЖ РАБОТЫ</th>
+      </tr>
+      <tr>
+        <td>Лопухова Надежда Александровна</td>
+        <td>Гувернантка</td>
+        <td>45</td>
+        <td>14 лет</td>
+      </tr>
+      <tr>
+        <td>Ермакова Надежда Ивановна</td>
+        <td>Няня</td>
+        <td>30</td>
+        <td>5 лет</td>
+      </tr>
+      <tr>
+        <td>Филимонов Евгений Семенович</td>
+        <td>Садовник</td>
+        <td>50</td>
+        <td>20 лет</td>
+      </tr>
+      <tr>
+        <td>Лопухова Надежда Александровна</td>
+        <td>Уборщица</td>
+        <td>35</td>
+        <td>7 лет</td>
+      </tr>
+      <tr>
+        <td>Миронов Юрий Герасимович</td>
+        <td>Конюх</td>
+        <td>60</td>
+        <td>15 лет</td>
+      </tr>
+      <tr>
+        <td>Новикова Нина Алексеевна</td>
+        <td>Повар</td>
+        <td>55</td>
+        <td>30 лет</td>
+      </tr>
+      <tr>
+        <td>Лопухова Надежда Александровна</td>
+        <td>Гувернантка</td>
+        <td>45</td>
+        <td>15 лет</td>
+      </tr>
+      <tr>
+        <td>Лопухова Надежда Александровна</td>
+        <td>Гувернантка</td>
+        <td>45</td>
+        <td>15 лет</td>
+      </tr>
+      <tr>
+        <td>Лопухова Надежда Александровна</td>
+        <td>Гувернантка</td>
+        <td>45</td>
+        <td>15 лет</td>
+      </tr>
+    </table>
+
+  </main>
+
+  <footer>
+    <div id="footer_container_1">
+      <a href="">ГЛАВНАЯ</a>
+      <a href="">ПОДОБАТЬ ПЕРСОНАЛ</a>
+      <a href="">ЦЕНЫ</a>
+    </div>
+    <div id="footer_container_2">
+      <span>8 (4872) 31-13-45</span>
+      <span>Разработка и продвижение сайта компанией «Юни Веб» -</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
