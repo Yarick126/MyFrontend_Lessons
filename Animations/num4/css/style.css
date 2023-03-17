@@ -1,0 +1,36 @@
+@import url(../css/reset.css);
+html {
+  box-sizing: border-box;
+}
+html .container {
+  border: 1px solid black;
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+  margin-left: 40%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html .container .box {
+  width: 100%;
+  height: 33%;
+  border: 1px solid black;
+  background-color: pink;
+  transition: transform 0.5s linear;
+}
+html .container .box:active, html .container .box:focus {
+  animation: upDown 1s linear;
+}
+@keyframes upDown {
+  from {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 10%;
+  }
+  to {
+    margin-top: 30%;
+  }
+}
