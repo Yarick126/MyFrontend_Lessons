@@ -4,33 +4,173 @@ html {
 }
 html .container {
   border: 1px solid black;
-  background-color: aqua;
-  width: 400px;
-  height: 400px;
-  margin-left: 40%;
+  border-radius: 50px;
+  background-color: #333333;
+  width: 500px;
+  height: 450px;
+  margin-left: 35%;
+  margin-top: 10%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+}
+html .container #box_1 {
+  border-radius: 50px;
+  background-color: #2ECA2B;
+  transition: all 3s;
+  height: 82px;
+  width: 80px;
+  animation: loading 3s ease infinite;
+}
+html .container #box_2 {
+  border-radius: 50px;
+  background-color: #2ECA2B;
+  transition: all 3s;
+  height: 305px;
+  width: 80px;
+  animation: loading_1 3s ease infinite;
+}
+html .container #box_3 {
+  border-radius: 50px;
+  background-color: #2ECA2B;
+  transition: all 3s;
+  height: 375px;
+  width: 80px;
+  animation: loading_2 3s ease infinite;
+}
+html .container_1 {
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #333333;
+  width: 500px;
+  height: 450px;
+  margin-left: 35%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  padding-bottom: 37px;
+}
+html .container_1 .sqar {
+  height: 375px;
+  width: 375px;
+  margin-right: 62px;
+  border-radius: 50px;
+  background-color: #2ECA2B;
+  animation: squiz 3s ease infinite;
+}
+html .container_2 {
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #333333;
+  width: 500px;
+  height: 450px;
+  margin-left: 35%;
   margin-top: 10%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
-html .container .box {
-  width: 100%;
-  height: 33%;
-  border: 1px solid black;
-  background-color: pink;
-  transition: transform 0.5s linear;
+html .container_2 .sqar_1 {
+  height: 42px;
+  width: 42px;
+  background-color: #2ECA2B;
+  border-radius: 50%;
+  animation: loading_3 3s ease infinite;
 }
-html .container .box:active, html .container .box:focus {
-  animation: upDown 1s linear;
-}
-@keyframes upDown {
-  from {
-    margin-top: 0;
+
+@keyframes loading {
+  0% {
+    height: 82px;
+  }
+  25% {
+    height: 206px;
   }
   50% {
-    margin-top: 10%;
+    height: 375px;
   }
-  to {
-    margin-top: 30%;
+  75% {
+    height: 206px;
+  }
+  100% {
+    height: 82px;
+  }
+}
+@keyframes loading_1 {
+  0% {
+    height: 206px;
+  }
+  25% {
+    height: 375px;
+  }
+  50% {
+    height: 82px;
+  }
+  75% {
+    height: 375px;
+  }
+  100% {
+    height: 206px;
+  }
+}
+@keyframes loading_2 {
+  0% {
+    height: 375px;
+  }
+  25% {
+    height: 82px;
+  }
+  50% {
+    height: 206px;
+  }
+  75% {
+    height: 82px;
+  }
+  100% {
+    height: 375px;
+  }
+}
+@keyframes squiz {
+  from {
+    width: 375px;
+    height: 375px;
+  }
+  25% {
+    width: 375px;
+    height: 82px;
+  }
+  50% {
+    width: 82px;
+    height: 82px;
+  }
+  100% {
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes loading_3 {
+  0% {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+  }
+  25% {
+    height: 168px;
+    width: 168px;
+    border-radius: 50%;
+  }
+  50% {
+    height: 375px;
+    width: 375px;
+    border-radius: 50px;
+  }
+  100% {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
   }
 }
