@@ -1,0 +1,70 @@
+@import url(../css/reset.css);
+html {
+  box-sizing: border-box;
+}
+html body {
+  padding-top: 70px;
+  padding-left: 122px;
+  height: 900px;
+  background-image: url("../imgs/heroPageImgs/Hero Page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html body nav {
+  width: 1260px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+html body nav img {
+  width: 150px;
+  height: 60px;
+  object-fit: cover;
+}
+html body nav .menu {
+  margin-left: 564px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+html body nav .menu a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+}
+html body nav .menu a:visited {
+  color: black;
+  text-decoration: none;
+}
+html body nav .menu a:focus, html body nav .menu a:hover {
+  text-shadow: 1px 0 black;
+}
+html main {
+  margin-top: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+html main img {
+  width: 20px;
+  height: 28px;
+  margin-bottom: 380px;
+  margin-right: 70px;
+}
+html main img:hover {
+  margin-bottom: 352px;
+  width: 40px;
+  height: 56px;
+}
+html footer .grouplinks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+html footer .grouplinks img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}

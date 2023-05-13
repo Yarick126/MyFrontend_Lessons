@@ -1,0 +1,45 @@
+@import '../css/reset.css';
+
+html {
+  box-sizing: border-box;
+
+  #box{
+    width: 400px;
+    height: 200px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    
+    .inside{
+      height: 100%;
+      width: 100px;
+      border: 1px solid black;
+
+      align-items: center;
+
+
+      animation: anim-ramka-4 1s linear infinite;
+    }
+  }
+}
+
+@keyframes anim-ramka-4 {
+  0% {
+      transform:translateX(0px);
+  }
+  50% {
+      transform:translateX(-50px);
+  }
+  75% {
+      transform:translateX(50px);
+  }
+  100%{
+    transform:translateX(0px);
+  }
+} 

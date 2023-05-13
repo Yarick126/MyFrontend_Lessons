@@ -1,0 +1,59 @@
+@import url(../css/reset.css);
+html {
+  box-sizing: border-box; }
+  html body {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative; }
+    html body #dashed_box {
+      width: 731px;
+      height: 350px;
+      position: absolute;
+      border: 5px dashed gray;
+      top: 180px;
+      left: 360px;
+      background-color: black;
+      display: flex;
+      flex-direction: row; }
+      html body #dashed_box .leter {
+        width: calc(731px/3);
+        height: 100%;
+        font-weight: 900;
+        font-size: 240px;
+        line-height: 100%;
+        color: red;
+        text-align: center;
+        border-right: 5px dashed gray; }
+      html body #dashed_box:hover::after, html body #dashed_box:hover::before {
+        background-color: #BFE2FF; }
+      html body #dashed_box::after, html body #dashed_box::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        z-index: -1;
+        margin: -2%;
+        animation: anim-ramka-3 8s linear infinite;
+        background-color: #FF4060; }
+      html body #dashed_box::before {
+        animation-delay: -4s; }
+      html body #dashed_box div:last-child {
+        border-right: none; }
+    html body .box {
+      width: 731px;
+      height: 350px;
+      border: 5px solid gray; }
+
+@keyframes anim-ramka-3 {
+  0%, 100% {
+    clip: rect(0px, 750px, 1px, 0px); }
+  25% {
+    clip: rect(0px, 1px, 750px, 0px); }
+  50% {
+    clip: rect(720px, 750px, 750px, 0px); }
+  75% {
+    clip: rect(0px, 750px, 750px, 750px); } }

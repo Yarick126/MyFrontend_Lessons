@@ -1,0 +1,97 @@
+@import '../css/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@mixin phStyle {
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: white;
+}
+
+html{
+  box-sizing: border-box;
+
+  body{
+    background-image: url('../imgs/Rectangle 4.png');
+    background-size: cover;
+    font-family: 'Italiana', serif;
+
+    form {
+      background: rgba(0, 0, 0, 0.3);
+      
+      border-radius: 42px;
+
+      width: 453px;
+      height: 495px;
+
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 37%;
+      margin-top: 5%;
+      padding-top: 1.5%;
+      padding-left: 5%;
+
+      span{
+        margin-left: 15%;
+        margin-bottom: 45px;
+        font-size: 40px;
+        line-height: 47px;
+
+        color:white;
+      }
+
+      input{
+        margin-top: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        width: 350px;
+        height: 55px;
+
+        font-size: 20px;
+        color: white;
+
+        border-radius: 42px;
+        background: rgba(175, 80, 80, 0.7);
+      }
+      label{
+        text-align: right;
+        margin-right: 100px;
+        margin-bottom: 55px;
+        color: white;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      ::-webkit-input-placeholder 
+      {
+        @include phStyle;
+      }
+      ::-moz-placeholder          
+      {
+        @include phStyle;
+      }/* Firefox 19+ */
+      :-moz-placeholder           
+      {
+        @include phStyle;
+      }/* Firefox 18- */
+      :-ms-input-placeholder      {
+        @include phStyle;
+      }
+      button{
+        width: 350px;
+        height: 55px;
+
+        @include phStyle;
+
+        border-radius: 42px;
+        background: rgba(175, 80, 80, 0.7);
+      }
+    }
+  }
+}
