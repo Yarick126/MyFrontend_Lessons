@@ -1,0 +1,75 @@
+@import url(../css/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+html {
+  box-sizing: border-box; }
+  html body {
+    background-image: url("../imgs/Rectangle 4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Italiana', serif; }
+    html body form {
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      border-radius: 42px;
+      width: 600px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
+      margin-top: 2%;
+      padding-top: 1.5%;
+      padding-left: 5%;
+      padding-right: 3%; }
+      html body form .inputData {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px; }
+        html body form .inputData label {
+          font-family: 'Italiana';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 42px;
+          text-align: center;
+          color: white; }
+        html body form .inputData input[type="text"], html body form .inputData input[type="password"] {
+          margin-right: 0px;
+          padding-left: 10px;
+          padding-right: 10px;
+          height: 20px;
+          width: 200px;
+          font-family: 'Italiana';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 42px;
+          text-align: center;
+          color: white;
+          border-radius: 30px;
+          background: rgba(175, 80, 80, 0.7); }
+      html body form button {
+        margin-top: 100px;
+        margin-left: 100px;
+        height: 50px;
+        width: 300px;
+        border-radius: 30px;
+        background: rgba(175, 80, 80, 0.7);
+        font-family: 'Italiana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 42px;
+        color: white; }
+      html body form a {
+        font-family: 'Italiana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 42px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        margin-right: 0px; }
+
+/*# sourceMappingURL=style.css.map */

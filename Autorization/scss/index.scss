@@ -17,6 +17,7 @@ html{
   body{
     background-image: url('../imgs/Rectangle 4.png');
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Italiana', serif;
 
     form {
@@ -52,13 +53,12 @@ html{
         width: 350px;
         height: 55px;
 
-        font-size: 20px;
-        color: white;
+        @include phStyle;
 
         border-radius: 42px;
         background: rgba(175, 80, 80, 0.7);
       }
-      label{
+      a{
         text-align: right;
         margin-right: 100px;
         margin-bottom: 55px;
@@ -67,6 +67,8 @@ html{
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
+
+        text-decoration: none;
       }
       ::-webkit-input-placeholder 
       {
@@ -80,7 +82,8 @@ html{
       {
         @include phStyle;
       }/* Firefox 18- */
-      :-ms-input-placeholder      {
+      :-ms-input-placeholder     
+      {
         @include phStyle;
       }
       button{

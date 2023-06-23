@@ -1,91 +1,15 @@
 @import url(../css/reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
-html {
-  box-sizing: border-box; }
-  html body {
-    background-image: url("../imgs/Rectangle 4.png");
-    background-size: cover;
-    font-family: 'Italiana', serif; }
-    html body form {
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 42px;
-      width: 453px;
-      height: 495px;
-      display: flex;
-      flex-direction: column;
-      margin-left: 37%;
-      margin-top: 5%;
-      padding-top: 1.5%;
-      padding-left: 5%;
-      /* Firefox 19+ */
-      /* Firefox 18- */ }
-      html body form span {
-        margin-left: 15%;
-        margin-bottom: 45px;
-        font-size: 40px;
-        line-height: 47px;
-        color: white; }
-      html body form input {
-        margin-top: 35px;
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 350px;
-        height: 55px;
-        font-size: 20px;
-        color: white;
-        border-radius: 42px;
-        background: rgba(175, 80, 80, 0.7); }
-      html body form label {
-        text-align: right;
-        margin-right: 100px;
-        margin-bottom: 55px;
-        color: white;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px; }
-      html body form ::-webkit-input-placeholder {
-        font-family: 'Italiana';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: white; }
-      html body form ::-moz-placeholder {
-        font-family: 'Italiana';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: white; }
-      html body form :-moz-placeholder {
-        font-family: 'Italiana';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: white; }
-      html body form :-ms-input-placeholder {
-        font-family: 'Italiana';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: white; }
-      html body form button {
-        width: 350px;
-        height: 55px;
-        font-family: 'Italiana';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: white;
-        border-radius: 42px;
-        background: rgba(175, 80, 80, 0.7); }
+html { box-sizing: border-box; }
+html body { background-image: url("../imgs/Rectangle 4.png"); background-size: cover; background-repeat: no-repeat; font-family: 'Italiana', serif; }
+html body form { background: rgba(0, 0, 0, 0.3); border-radius: 42px; width: 453px; height: 495px; display: flex; flex-direction: column; margin-left: 37%; margin-top: 5%; padding-top: 1.5%; padding-left: 5%; /* Firefox 19+ */ /* Firefox 18- */ }
+html body form span { margin-left: 15%; margin-bottom: 45px; font-size: 40px; line-height: 47px; color: white; }
+html body form input { margin-top: 35px; padding-left: 10px; padding-right: 10px; width: 350px; height: 55px; font-family: 'Italiana'; font-style: normal; font-weight: 400; font-size: 36px; line-height: 42px; text-align: center; color: white; border-radius: 42px; background: rgba(175, 80, 80, 0.7); }
+html body form a { text-align: right; margin-right: 100px; margin-bottom: 55px; color: white; font-weight: 400; font-size: 20px; line-height: 24px; text-decoration: none; }
+html body form ::-webkit-input-placeholder { font-family: 'Italiana'; font-style: normal; font-weight: 400; font-size: 36px; line-height: 42px; text-align: center; color: white; }
+html body form ::-moz-placeholder { font-family: 'Italiana'; font-style: normal; font-weight: 400; font-size: 36px; line-height: 42px; text-align: center; color: white; }
+html body form :-moz-placeholder { font-family: 'Italiana'; font-style: normal; font-weight: 400; font-size: 36px; line-height: 42px; text-align: center; color: white; }
+html body form :-ms-input-placeholder { font-family: 'Italiana'; font-style: normal; font-weight: 400; font-size: 36px; line-height: 42px; text-align: center; color: white; }
+html body form button { width: 350px; height: 55px; font-family: 'Italiana'; font-style: normal; font-weight: 400; font-size: 36px; line-height: 42px; text-align: center; color: white; border-radius: 42px; background: rgba(175, 80, 80, 0.7); }
 
 /*# sourceMappingURL=index.css.map */

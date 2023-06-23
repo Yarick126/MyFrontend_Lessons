@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../regCss/style.css">
+  <title>Registration</title>
+</head>
+<body>
+  <form action="#" name="autorith" id="f1">
+    <span>Registration</span>
+
+    <div class="inputData">
+
+      <label for="firstName">First name: </label><input type="text" autofocus maxlength="255" wrap="soft" id="firstName"><div class="error-message">Ivalid Input</div>
+      <label for="secondName">Second name: </label><input type="text"  maxlength="255" wrap="soft" id="secondName"><div class="error-message"></div>
+        
+      <div>
+        <label for="male">Male 
+          <input type="radio"  maxlength="255" wrap="soft" id="male" name="sex">
+        </label>
+        <label for="female">Female 
+          <input type="radio"  maxlength="255" wrap="soft" id="female" name="sex">
+        </label>
+      </div>
+      
+      <label for="login">Login: </label><input type="text"  maxlength="255" wrap="soft" id="login">
+  
+      <label for="password">Password: </label><input type="password"  maxlength="255" wrap="soft" id="password">
+  
+      <label for="repPassword">Repeat password: </label><input type="password"  maxlength="255" wrap="soft" id="repPassword">
+    </div>
+
+    <button type="submit" >Sign up</button>
+    <a href="index.html">Have an account?</a> 
+  </form>
+  
+</body>
+<script src="../js/regScript.js"></script>
+</html>
